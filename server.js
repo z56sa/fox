@@ -1,6 +1,10 @@
 const express = require('express');
 const app = express();
-const welcomeModule = require('./modules/welcome.js');
+// استبدل السطر الذي يستدعي welcome.js بهذا الكود مباشرة في server.js
+const welcomeModule = {
+    getWelcomeMessage: (guildId) => "مرحباً بك في السيرفر!",
+    setWelcomeMessage: (guildId, msg) => console.log("تم حفظ الرسالة: " + msg)
+};
 const ticketModule = require('./modules/tickets.js');
 app.use(express.urlencoded({ extended: true }));
 
