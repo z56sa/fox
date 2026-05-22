@@ -1,0 +1,16 @@
+{
+  "name": "fox",
+  "version": "2.0.0",
+  "description": "FOX Bot system with backend dashboard",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@napi-rs/canvas": "^0.1.44",
+    "better-sqlite3": "^12.10.0",
+    "discord.js": "^14.14.1",
+    "express": "^4.19.2",
+    "quick.db": "^9.1.7"
+  }
+}
